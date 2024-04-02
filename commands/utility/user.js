@@ -6,6 +6,6 @@ module.exports = {
         .setDescription('returns data about user'),
 
     async execute(interaction) {
-        await interaction.reply(`The user who ran this command was ${interaction.user.username}, they joined on ${interaction.user.joinedAt}`);
+        await interaction.reply(`The user who ran this command was ${interaction.user.username}, they joined on ${interaction.user.joinedAt ?? 'An unknown date'}`);
     },
 };
